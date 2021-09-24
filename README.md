@@ -1,2 +1,16 @@
 # Function approximation using genetic algorithms
-hello
+## Overview
+
+## Requirements
+- random
+- numpy
+- pandas
+- matplotlib
+
+- time
+- tqdm
+
+## Getting started
+## Authors
+
+## Sources
