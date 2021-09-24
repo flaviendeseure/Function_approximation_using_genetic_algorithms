@@ -1,1 +1,1 @@
-# Function_approximation_with_genetics_algorithms
+# Function approximation using genetics algorithms
