@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# %% # Approximation de fonction par Algorithme génétique
+# Function approximation using genetic algorithm
 
 # %% ## I- Initialisation
 # Basics import
