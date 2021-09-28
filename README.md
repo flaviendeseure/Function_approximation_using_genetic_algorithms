@@ -7,8 +7,9 @@
 ## Overview
 This project aims to determine the temperature at the surface of a new unknown star at any time, from a few observations.
 It is known that the temperature follows a function called Weierstrass, defined as follows:
-<img src="https://render.githubusercontent.com/render/math?math=t(i)=\sum_{n=0}^c a^n\times \cos(b^n\pi i)">
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;t(i)=\sum_{n=0}^c a^n\times \cos(b^n\pi i)">
 Where <img src="https://render.githubusercontent.com/render/math?math=t(i)"> is the star temperature at a given time i, with the following set of parameters:
+![equation](http://www.sciweavers.org/tex2img.php?eq=1%2Bsin%28mc%5E2%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
 
 
 ## Requirements
