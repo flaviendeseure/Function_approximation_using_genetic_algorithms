@@ -9,7 +9,6 @@ This project aims to determine the temperature at the surface of a new unknown s
 It is known that the temperature follows a function called Weierstrass, defined as follows:  
 <img src="https://render.githubusercontent.com/render/math?math=t(i)=\sum_{n=0}^c a^n\times \cos(b^n\pi i)">  
 Where <img src="https://render.githubusercontent.com/render/math?math=t(i)"> is the star temperature at a given time i, with the following set of parameters:  
-<img src="
 $$\left\{
     \begin{array}{ll}
         A = \left\{~a\in\mathbb{R}~|~a\in~]0,1[~\right\} \\
@@ -47,5 +46,5 @@ Flavien DESEURE--CHARRON - flavien.deseure@gmail.com - [![Linkedin](https://i.st
 
 
 ## Sources
-[1] E. Wirsansky, "Hands-On Genetic Algorithms with Python:applying genetic algorithms to solve real-world deep learning and artificial intelligence problems", *Packt*, 2020
+[1] E. Wirsansky, "Hands-On Genetic Algorithms with Python:applying genetic algorithms to solve real-world deep learning and artificial intelligence problems", *Packt*, 2020  
 [2] P Siarry, "Métaheuristiques", *Eyrolls*, 2014
