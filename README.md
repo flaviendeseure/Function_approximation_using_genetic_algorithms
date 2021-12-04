@@ -12,13 +12,7 @@ It is known that the temperature follows a function called Weierstrass, defined 
 <img align="middle" src="https://render.githubusercontent.com/render/math?math=t(i)=\sum_{n=0}^c a^n\times \cos(b^n\pi i)"/>  
     
 Where <img src="https://render.githubusercontent.com/render/math?math=t(i)"> is the star temperature at a given time i, with the following set of parameters:  
-$$\left\{
-    \begin{array}{ll}
-        A = \left\{~a\in\mathbb{R}~|~a\in~]0,1[~\right\} \\
-        B = \left\{~b\in\mathbb{N}~|~b\in~[1,20]~\right\} \\
-        C = \left\{~c\in\mathbb{N}~|~c\in~[1,20]~\right\} \\
-    \end{array}
-\right.$$">
+<img src="https://github.com/flaviendeseure/Function_approximation_using_genetic_algorithms/blob/main/Images/parameters.PNG?raw=true"/>  
 
 To reach this objective, we need to find the appropriate (a,b,c) coefficients.  
 We have at our disposal a set of temperature points measured at several instants i.
@@ -31,7 +25,7 @@ However, in Python the maximum precision is 10^15 - 1. So there are **(10^15 - 1
 
 ### III. Fitness function
 I have chosen the following function for fitness:  
-
+<img src="https://github.com/flaviendeseure/Function_approximation_using_genetic_algorithms/blob/main/Images/fitness.png?raw=true"/>  
 where t is the Weierstrass function with the parameters a,b,c and n the number of observations.  
   
 This function corresponds to the norm 2 of the vector of the difference between the observations and the values found.  
@@ -46,9 +40,11 @@ The integers are converted into binary number and then put side by side to obtai
 ##### a. Crossover
 **Method used:** Two point crossover.  
 This method consists in choosing two points randomly in the chromosomes of each parent and inverting the gene sequences between these two points.
+<img src="https://github.com/flaviendeseure/Function_approximation_using_genetic_algorithms/blob/main/Images/Two_point_crossover.png?raw=true" width="400"/>
 ##### b. Mutation
 **Method used:** Multiple flip bit mutation.  
 This method consists in choosing several genes randomly in the chromosome and inverting their values (0 if 1 or 1 if 0).
+<img src="https://github.com/flaviendeseure/Function_approximation_using_genetic_algorithms/blob/main/Images/flip-bit-mutation.jpg?raw=true" width="400"/>
 
 #### 2. Real numbers
 ##### a. Crossover
@@ -56,12 +52,19 @@ This method consists in choosing several genes randomly in the chromosome and in
 This method imitates the properties of the Single point crossover. One of its properties is that the average of the values of the parents is equal to the average of the values of the children.    
 The two children are created from the two parents using the following formula:  
 
-Where β, the spreading factor, is defined as follows:
+<img src="https://github.com/flaviendeseure/Function_approximation_using_genetic_algorithms/blob/main/Images/offsprings.PNG?raw=true" width="200"/>
+
+Where β, the spreading factor, is defined as follows:  
+
+<img src="https://github.com/flaviendeseure/Function_approximation_using_genetic_algorithms/blob/main/Images/beta.PNG?raw=true" width="200"/>
 
 With the following parameters:  
 - η: between 2 and 5: (2: more variation between parents, 5: less
 variations)
 - u : uniformly distributed on the interval [0, 1]
+<img src="https://github.com/flaviendeseure/Function_approximation_using_genetic_algorithms/blob/main/Images/Simulated_binary_crossover.jpg?raw=true" width="400"/>
+
+
 ##### b. Mutation
 The method consists in multiplying the parent by a factor between 0.95 and 1.05.
 
