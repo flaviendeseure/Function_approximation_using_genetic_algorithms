@@ -40,10 +40,12 @@ The integers are converted into binary number and then put side by side to obtai
 ##### a. Crossover
 **Method used:** Two point crossover.  
 This method consists in choosing two points randomly in the chromosomes of each parent and inverting the gene sequences between these two points.
+  
 <img src="https://github.com/flaviendeseure/Function_approximation_using_genetic_algorithms/blob/main/Images/Two_point_crossover.png?raw=true" width="400"/>
 ##### b. Mutation
 **Method used:** Multiple flip bit mutation.  
-This method consists in choosing several genes randomly in the chromosome and inverting their values (0 if 1 or 1 if 0).
+This method consists in choosing several genes randomly in the chromosome and inverting their values (0 if 1 or 1 if 0).  
+
 <img src="https://github.com/flaviendeseure/Function_approximation_using_genetic_algorithms/blob/main/Images/flip-bit-mutation.jpg?raw=true" width="400"/>
 
 #### 2. Real numbers
